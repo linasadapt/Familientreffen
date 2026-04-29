@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="reg.hero.title">Register · Family Gathering 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23A66A3A'/%3E%3C/svg%3E" />
+</head>
+<body data-page="register">
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span data-i18n="brand">Family Gathering 2026</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html"    data-page-link="home"     data-i18n="nav.home">Practical info</a>
+      <a href="register.html" data-page-link="register" data-i18n="nav.register">Register</a>
+      <a href="about.html"    data-page-link="about"    data-i18n="nav.about">About Druskininkai</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="en">EN</button>
+      <button data-lang="lt">LT</button>
+      <button data-lang="de">DE</button>
+    </div>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero-soft">
+  <div class="hero-soft-inner" style="padding-bottom: 56px;">
+    <div class="eyebrow">Save your spot</div>
+    <h1 data-i18n="reg.hero.title">Register for the <em>gathering</em></h1>
+    <p class="lede" data-i18n="reg.hero.lead">A few minutes to fill in. We need to know who&rsquo;s coming, when, and what they need.</p>
+  </div>
+</section>
+
+<!-- ─── FORM ─── -->
+<main class="form-shell">
+  <form id="reg-form" novalidate style="margin-top: 40px;">
+
+    <p class="notice" data-i18n="reg.note">Each person registers separately. Feel free to register elders, kids, or close ones if you have all their info &mdash; that&rsquo;s helpful and welcome.</p>
+
+    <!-- About this person -->
+    <div class="fieldset">
+      <h3 data-i18n="reg.form.contact">About this person</h3>
+      <p class="hint">Basic info so we know who&rsquo;s coming.</p>
+
+      <div class="form-row-2">
+        <div class="field">
+          <label for="reg-name"><span data-i18n="reg.f.name">Full name</span> <span class="req">*</span></label>
+          <input id="reg-name" type="text" name="name" required data-i18n-ph="reg.f.namePh" placeholder="First and last name" />
+        </div>
+        <div class="field">
+          <label for="reg-email"><span data-i18n="reg.f.email">Email</span></label>
+          <input id="reg-email" type="email" name="email" data-i18n-ph="reg.f.emailPh" placeholder="Optional, but useful for updates" />
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="field">
+          <label for="reg-phone"><span data-i18n="reg.f.phone">Phone</span></label>
+          <input id="reg-phone" type="tel" name="phone" data-i18n-ph="reg.f.phonePh" placeholder="Optional, +country code" />
+        </div>
+        <div class="field">
+          <label for="reg-country"><span data-i18n="reg.f.country">Country</span> <span class="req">*</span></label>
+          <select id="reg-country" name="country" required>
+            <option value="">—</option>
+            <option value="LT">Lietuva / Lithuania</option>
+            <option value="DE">Deutschland / Germany</option>
+            <option value="UA">Україна / Ukraine</option>
+            <option value="GB">United Kingdom</option>
+            <option value="IE">Ireland</option>
+            <option value="NL">Netherlands</option>
+            <option value="BE">Belgium</option>
+            <option value="FR">France</option>
+            <option value="ES">Spain</option>
+            <option value="IT">Italy</option>
+            <option value="AT">Austria</option>
+            <option value="CH">Switzerland</option>
+            <option value="PL">Poland</option>
+            <option value="LV">Latvia</option>
+            <option value="EE">Estonia</option>
+            <option value="SE">Sweden</option>
+            <option value="NO">Norway</option>
+            <option value="FI">Finland</option>
+            <option value="DK">Denmark</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="AU">Australia</option>
+            <option value="OTHER">Other / Kita / Andere</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="field">
+          <label for="reg-city"><span data-i18n="reg.f.city">City</span></label>
+          <input id="reg-city" type="text" name="city" data-i18n-ph="reg.f.cityPh" placeholder="So we can place a pin on the family map" />
+        </div>
+        <div class="field">
+          <label for="reg-age"><span data-i18n="reg.f.age">Age group</span></label>
+          <select id="reg-age" name="age_group">
+            <option value="">—</option>
+            <option value="under5">Under 5 / iki 5 / unter 5</option>
+            <option value="5-12">5–12</option>
+            <option value="13-17">13–17</option>
+            <option value="18-30">18–30</option>
+            <option value="31-50">31–50</option>
+            <option value="51-70">51–70</option>
+            <option value="71+">71+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row-1">
+        <div class="field">
+          <label class="fl" data-i18n="reg.f.langs">Languages spoken or understood</label>
+          <p class="hint" style="margin: 0 0 8px;" data-i18n="reg.f.langsHint">Tick all that apply.</p>
+          <div class="opt-grid">
+            <label class="check"><input type="checkbox" name="langs" value="en" /><span data-i18n="reg.f.langs.en">English</span></label>
+            <label class="check"><input type="checkbox" name="langs" value="de" /><span data-i18n="reg.f.langs.de">German</span></label>
+            <label class="check"><input type="checkbox" name="langs" value="ru" /><span data-i18n="reg.f.langs.ru">Russian</span></label>
+            <label class="check"><input type="checkbox" name="langs" value="uk" /><span data-i18n="reg.f.langs.uk">Ukrainian</span></label>
+            <label class="check"><input type="checkbox" name="langs" value="lt" /><span data-i18n="reg.f.langs.lt">Lithuanian</span></label>
+            <label class="check"><input type="checkbox" name="langs" value="other" id="langs-other-cb" /><span data-i18n="reg.f.langs.other">Other</span></label>
+          </div>
+          <input type="text" name="langs_other" id="langs-other-input" data-i18n-ph="reg.f.langsOtherPh" placeholder="Which other language(s)?" style="margin-top: 8px; display: none;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Travel -->
+    <div class="fieldset">
+      <h3 data-i18n="reg.form.travel">Travel</h3>
+      <p class="hint">When you&rsquo;re arriving and how. Helps us coordinate pickups.</p>
+
+      <div class="form-row-3">
+        <div class="field">
+          <label for="reg-arr"><span data-i18n="reg.f.arrival">Date of arrival</span> <span class="req">*</span></label>
+          <input id="reg-arr" type="date" name="arrival" required min="2026-08-01" max="2026-08-15" value="2026-08-08" />
+        </div>
+        <div class="field">
+          <label for="reg-mean"><span data-i18n="reg.f.mean">Mean of arrival</span> <span class="req">*</span></label>
+          <select id="reg-mean" name="mean" required>
+            <option value="">—</option>
+            <option value="car"    data-i18n="reg.f.mean.car">Car</option>
+            <option value="plane"  data-i18n="reg.f.mean.plane">Plane</option>
+            <option value="train"  data-i18n="reg.f.mean.train">Train</option>
+            <option value="bus"    data-i18n="reg.f.mean.bus">Bus</option>
+            <option value="camper" data-i18n="reg.f.mean.camper">Camper / van</option>
+            <option value="other"  data-i18n="reg.f.mean.other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="reg-diet"><span data-i18n="reg.f.diet">Dietary preferences</span> <span class="req">*</span></label>
+          <input id="reg-diet" type="text" name="diet" required data-i18n-ph="reg.f.dietPh" placeholder='e.g. "no restrictions"' />
+        </div>
+      </div>
+
+      <div class="form-row-2">
+        <div class="field">
+          <label for="reg-dep"><span data-i18n="reg.f.departure">Date of departure</span> <span class="req">*</span></label>
+          <input id="reg-dep" type="date" name="departure" required min="2026-08-01" max="2026-08-20" value="2026-08-09" />
+        </div>
+        <div class="field">
+          <label for="reg-deptime"><span data-i18n="reg.f.departureT">Time of departure</span></label>
+          <input id="reg-deptime" type="time" name="departure_time" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Accommodation -->
+    <div class="fieldset">
+      <h3 data-i18n="reg.form.acc">Accommodation preference</h3>
+      <p class="hint">Pick what you&rsquo;d like &mdash; we&rsquo;ll do our best to match.</p>
+      <div class="opt-grid" id="acc-group">
+        <label class="radio"><input type="radio" name="accommodation" value="group"  required /><span data-i18n="reg.f.acc.group">Group solution — staying at the event venue overnight</span></label>
+        <label class="radio"><input type="radio" name="accommodation" value="hotel"  /><span data-i18n="reg.f.acc.hotel">Hotel room in Druskininkai</span></label>
+        <label class="radio"><input type="radio" name="accommodation" value="camper" /><span data-i18n="reg.f.acc.camper">Camper van &amp; campsite</span></label>
+        <label class="radio"><input type="radio" name="accommodation" value="other"  id="acc-other-radio" /><span data-i18n="reg.f.acc.other">Other</span></label>
+        <label class="radio"><input type="radio" name="accommodation" value="own"    /><span data-i18n="reg.f.acc.own">I already have a solution</span></label>
+      </div>
+      <input type="text" name="accommodation_other" id="acc-other-input" data-i18n-ph="reg.f.accOtherPh" placeholder="Tell us briefly" style="margin-top: 10px; display: none;" />
+    </div>
+
+    <!-- Activity preferences -->
+    <div class="fieldset">
+      <h3 data-i18n="reg.form.act">Activity preferences</h3>
+      <p class="hint" data-i18n="reg.f.actHint">Tick whichever you&rsquo;d like to be included in. Optional.</p>
+      <div class="opt-grid">
+        <label class="check"><input type="checkbox" name="activities" value="quiz"    /><span data-i18n="reg.f.act.quiz">Family quiz / Kahoot</span></label>
+        <label class="check"><input type="checkbox" name="activities" value="photos"  /><span data-i18n="reg.f.act.photos">Photo sharing</span></label>
+        <label class="check"><input type="checkbox" name="activities" value="history" /><span data-i18n="reg.f.act.history">Family history snippets</span></label>
+        <label class="check"><input type="checkbox" name="activities" value="games"   /><span data-i18n="reg.f.act.games">Outdoor games &amp; walks</span></label>
+        <label class="check"><input type="checkbox" name="activities" value="kids"    /><span data-i18n="reg.f.act.kids">Kids-friendly activities</span></label>
+        <label class="check"><input type="checkbox" name="activities" value="walk"    /><span data-i18n="reg.f.act.walk">Sunday walk in Druskininkai</span></label>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="fieldset">
+      <h3 data-i18n="reg.form.notes">Notes</h3>
+      <div class="field">
+        <textarea name="notes" data-i18n-ph="reg.f.notesPh" placeholder="Anything else we should know — accessibility, allergies, things to coordinate."></textarea>
+      </div>
+    </div>
+
+    <!-- Consent + submit -->
+    <label class="consent">
+      <input type="checkbox" name="consent" required />
+      <span><span data-i18n="reg.f.consent">I&rsquo;m OK with this info being used by the organizer to plan the gathering.</span> <span style="color: var(--terra-deep);">*</span></span>
+    </label>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary btn-large" id="submit-btn" data-i18n="reg.submit">Send registration</button>
+    </div>
+
+    <div id="form-msg" class="form-message" role="status" aria-live="polite"></div>
+
+  </form>
+</main>
+
+<footer>
+  <span data-i18n="footer.dates">8&ndash;9 August 2026 &middot; Druskininkai, Lithuania</span>
+  <span><span data-i18n="footer.contact">Contact</span>: <a data-organizer-email href="mailto:linas@adaptagency.com">linas@adaptagency.com</a></span>
+</footer>
+
+<script src="shared.js"></script>
+<script>
+/* =========================================================
+   Register — form behaviour + submission
+   ========================================================= */
+(function () {
+  "use strict";
+
+  // Conditional: langs other
+  const langsCb = document.getElementById("langs-other-cb");
+  const langsIn = document.getElementById("langs-other-input");
+  langsCb.addEventListener("change", () => {
+    langsIn.style.display = langsCb.checked ? "" : "none";
+    if (!langsCb.checked) langsIn.value = "";
+  });
+
+  // Conditional: accommodation other
+  const accInputs = document.querySelectorAll("input[name='accommodation']");
+  const accOtherIn = document.getElementById("acc-other-input");
+  accInputs.forEach(r => r.addEventListener("change", () => {
+    const isOther = document.getElementById("acc-other-radio").checked;
+    accOtherIn.style.display = isOther ? "" : "none";
+    if (!isOther) accOtherIn.value = "";
+  }));
+
+  // Build payload
+  function buildPayload() {
+    const f = document.getElementById("reg-form");
+    const langs      = [...f.querySelectorAll("input[name='langs']:checked")].map(i => i.value);
+    const activities = [...f.querySelectorAll("input[name='activities']:checked")].map(i => i.value);
+    const acc        = f.querySelector("input[name='accommodation']:checked");
+    return {
+      schema: "fg2026.v3",
+      submission_id: makeSubmissionId(),
+      submittedAt:   new Date().toISOString(),
+      lang:          window.FG.getLang(),
+      name:          f.name.value.trim(),
+      email:         f.email.value.trim(),
+      phone:         f.phone.value.trim(),
+      country:       f.country.value,
+      city:          f.city.value.trim(),
+      age_group:     f.age_group.value,
+      langs,
+      langs_other:   f.langs_other.value.trim(),
+      arrival:        f.arrival.value,
+      mean:           f.mean.value,
+      departure:      f.departure.value,
+      departure_time: f.departure_time.value,
+      diet:           f.diet.value.trim(),
+      accommodation:       acc ? acc.value : "",
+      accommodation_other: f.accommodation_other.value.trim(),
+      activities,
+      notes:   f.notes.value.trim(),
+      consent: f.consent.checked
+    };
+  }
+  function makeSubmissionId() {
+    const ts   = new Date().toISOString().replace(/[^0-9]/g, "").slice(0, 14);
+    const rand = Math.random().toString(36).slice(2, 8);
+    return ts + "-" + rand;
+  }
+
+  function setMsg(kind, html) {
+    const el = document.getElementById("form-msg");
+    el.className = "form-message " + kind;
+    el.innerHTML = html;
+  }
+  function downloadJson(payload) {
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement("a");
+    const safe = (payload.name || "registration").replace(/[^\w-]+/g, "_");
+    a.href = url; a.download = `Registration_FamilyGathering2026_${safe}.json`;
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+  }
+  function mailtoUrl(payload) {
+    const subj = `Registration — Family Gathering 2026 — ${payload.name}`;
+    const body = [
+      "Family Gathering 2026 — Registration", "",
+      `Name:       ${payload.name}`,
+      `Email:      ${payload.email}`,
+      `Phone:      ${payload.phone}`,
+      `Country:    ${payload.country}`,
+      `City:       ${payload.city}`,
+      `Age group:  ${payload.age_group}`,
+      `Languages:  ${[...payload.langs, payload.langs_other].filter(Boolean).join(", ")}`, "",
+      `Arrival:    ${payload.arrival} (${payload.mean})`,
+      `Departure:  ${payload.departure} ${payload.departure_time}`,
+      `Diet:       ${payload.diet}`, "",
+      `Accommodation: ${payload.accommodation}${payload.accommodation_other ? ` (${payload.accommodation_other})` : ""}`,
+      `Activities:    ${payload.activities.join(", ")}`, "",
+      `Notes:      ${payload.notes || "-"}`, "",
+      `Submission ID: ${payload.submission_id}`,
+      `Submitted:     ${payload.submittedAt}`,
+      `Language:      ${payload.lang}`
+    ].join("\n");
+    return `mailto:${window.FG_CONFIG.organizerEmail}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+  }
+  async function postToEndpoint(payload) {
+    const res = await fetch(window.FG_CONFIG.endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const json = await res.json().catch(() => ({}));
+    if (json && json.ok === false) throw new Error(json.error || "Server rejected");
+    return json;
+  }
+
+  const form = document.getElementById("reg-form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    const btn = document.getElementById("submit-btn");
+    btn.disabled = true;
+    btn.textContent = window.FG.t("reg.submitting");
+
+    const payload = buildPayload();
+    try {
+      if (window.FG_CONFIG.endpoint) {
+        await postToEndpoint(payload);
+        setMsg("success", window.FG.t("reg.success"));
+        form.reset();
+        langsIn.style.display = "none";
+        accOtherIn.style.display = "none";
+      } else {
+        setMsg("fallback",
+          `<div style="margin-bottom:8px;">${window.FG.t("reg.fallback.lead")}</div>
+           <div class="form-actions">
+             <a class="btn btn-primary btn-sm" href="${mailtoUrl(payload)}">${window.FG.t("reg.fallback.email")}</a>
+             <button type="button" class="btn btn-ghost btn-sm" id="dl-json">${window.FG.t("reg.fallback.dl")}</button>
+           </div>`);
+        document.getElementById("dl-json").addEventListener("click", () => downloadJson(payload));
+      }
+    } catch (err) {
+      console.error(err);
+      setMsg("error", window.FG.t("reg.error"));
+    } finally {
+      btn.disabled = false;
+      btn.textContent = window.FG.t("reg.submit");
+    }
+  });
+})();
+</script>
+</body>
+</html>
