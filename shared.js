@@ -158,7 +158,6 @@
       "about.getting.busV": "Daily coaches connect Vilnius and Druskininkai (~2 h). Less convenient with luggage and small kids, but workable.",
 
       "close.quote":        "See you in the pines, by the lake, in August.",
-      "close.signoff":      "— with love, the family",
 
       "home.essentials.intro": "The four things to know.",
 
@@ -351,7 +350,6 @@
       "about.getting.busV": "Maršrutinis autobusas tarp Vilniaus ir Druskininkų (~2 val.). Mažiau patogu su bagažu ir vaikais, bet įmanoma.",
 
       "close.quote":        "Susitiksime pušynuose, prie ežero, rugpjūtį.",
-      "close.signoff":      "— su meile, šeima",
 
       "home.essentials.intro": "Keturi svarbiausi dalykai.",
 
@@ -542,7 +540,6 @@
       "about.getting.busV": "Tägliche Busse zwischen Vilnius und Druskininkai (~2 Std.). Mit Gepäck und kleinen Kindern weniger bequem, aber machbar.",
 
       "close.quote":        "Wir sehen uns in den Kiefern, am See, im August.",
-      "close.signoff":      "— in Liebe, die Familie",
 
       "home.essentials.intro": "Die vier wichtigsten Dinge.",
 
